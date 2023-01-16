@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- libraries -->
+        <!-- boots rap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+        <style>
+            body {
+                font-family: 'Almarai', sans-serif;
+            }
+
+            .bg-primary{
+                background: #811538 !important;
+                color: white;
+            }
+
+            .bg-secondary{
+                background: #5b0d25 !important;
+                color: white;
+            }
+
+            #header-background{
+                background-image: url("pattern.png");
+            }
+
+            #header{
+                clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
+                border-bottom: solid 20px #5b0d25;
+            }
+
+            #logo-header{
+                position: absolute;
+                z-index: 999;
+                left: 100px;
+                top: 60px;
+            }
+
+            #logo-img{
+                height: 300px;
+                -webkit-filter: drop-shadow(5px 5px 30px #222);
+                filter: drop-shadow(5px 5px 30px #222);
+            }
+        </style>
+</head>
+<body>
+    <!-- logo header -->
+    <div id="logo-header">
+        <img id="logo-img" src="logo.png" alt="">    
+    </div>
+    <!-- logo header -->
+
+    <!-- header -->
+    <div id="header" style="height: 20rem;" class="bg-primary">
+        <div id="header-background" style="width: 100%; height: 100%; color: white;">
+
+            <div class="p-5" style="direction: rtl; font-size: 50px; margin-right: 100px;">
+                <h1 style="font-size: 70px; font-weight: 800;">كأس</h1>
+                <h1 style="font-size: 90px; font-weight: 800;">العالم</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- QATAR WORD -->
+    <div class="d-flex justify-content-center" style="margin-top: 30px;">
+        <img src="qatar-word.png" alt="" style="width: 400px;">
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="container" style="margin-top: 50px;">
+
+        <!-- STANDINGS -->
+        <div class="p-5 mt-1">
+            <!-- TITLE -->
+            <div class="row" style="direction: rtl;"> 
+                <h1><b>المجموعات</b></h1>
+                <hr>
+            </div>
+            <!-- STANDINGS ROW -->
+            <div class="row" id="standings">
+
+                <!-- STANDINGS COL 1-->
+                <div class="col-sm-6 mb-4">
+                    <div class="card shadow border-none">
+                        <div class="card-header bg-primary" style="text-align: center;">
+                            <b>Grp. A</b>
+                        </div>
+                        <div class="row m-0 bg-secondary">
+                            <div class="col-sm-4" style="text-align: center;">
+                                team
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                W
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                L
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                D
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                Pts
+                            </div>
+                        </div>
+                        <!-- TEAMS -->
+                        <ul class="list-group list-group-flush">
+                            <!-- TEAM1 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.cgHHbK10pc9EKXmEBVYdmwHaE7?w=259&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>NED</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                3
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>7</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM1 //-->
+                            <!-- TEAM2 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.5WZrOzquLZBOS_hDgJLmKgHaE8?w=244&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>SEN</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>6</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM2 //-->
+                            <!-- TEAM3 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.B88Bv37sT9DKFHdQt7_tcgHaDu?w=321&h=176&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>ECU</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>4</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM3 //-->
+                            <!-- TEAM4 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.PdbgKopFgsv3JpACnQcgxAHaEK?w=279&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>QAT</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                3
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>O</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM4 //-->
+                        </ul>
+                    </div>
+                </div>
+                <!--// STANDINGS COL 1 //-->
+
+                <!-- STANDINGS COL 2-->
+                <div class="col-sm-6 mb-4">
+                    <div class="card shadow border-none">
+                        <div class="card-header bg-primary" style="text-align: center;">
+                            <b>Grp. B</b>
+                        </div>
+                        <div class="row m-0 bg-secondary">
+                            <div class="col-sm-4" style="text-align: center;">
+                                team
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                W
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                L
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                D
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                Pts
+                            </div>
+                        </div>
+                        <!-- TEAMS -->
+                        <ul class="list-group list-group-flush">
+                            <!-- TEAM1 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.kG5v53Vbd-ugAJo__91x_wHaEc?w=290&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>ENG</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                -
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                -
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                -
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>-</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM1 //-->
+                            <!-- TEAM2 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.VgKxizxTiOGeylfZHa-nowAAAA?w=267&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>USA</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>5</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM2 //-->
+                            <!-- TEAM3 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.NB5eH572u3MhuyvIgJF_WwFKC8?w=298&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>IRN</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>3</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM3 //-->
+                            <!-- TEAM4 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.nQAudEE98HKLIAt1b4-TLgHaE7?w=251&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>WAL</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>1</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM4 //-->
+                        </ul>
+                    </div>
+                </div>
+                <!--// STANDINGS COL 2 //-->
+
+                <!-- STANDINGS COL 3-->
+                <div class="col-sm-6 mb-4">
+                    <div class="card shadow border-none">
+                        <div class="card-header bg-primary" style="text-align: center;">
+                            <b>Grp. C</b>
+                        </div>
+                        <div class="row m-0 bg-secondary">
+                            <div class="col-sm-4" style="text-align: center;">
+                                team
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                W
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                L
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                D
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                Pts
+                            </div>
+                        </div>
+                        <!-- TEAMS -->
+                        <ul class="list-group list-group-flush">
+                            <!-- TEAM1 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.y2mi7P7r0-tBQCNpRIGY_AHaEo?w=279&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>ARG</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                -
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                -
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                -
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>-</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM1 //-->
+                            <!-- TEAM2 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.UYx41_n9YRInyUmSlF0YzAHaEq?w=271&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>POL</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>4</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM2 //-->
+                            <!-- TEAM3 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.adE_DROK9Oi_uk7Vj7RFVQHaEO?w=307&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>MEX</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>4</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM3 //-->
+                            <!-- TEAM4 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://cdn.britannica.com/79/5779-004-491EE13C.jpg" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>KSA</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>3</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM4 //-->
+                        </ul>
+                    </div>
+                </div>
+                <!--// STANDINGS COL 3 //-->
+
+                <!-- STANDINGS COL 4-->
+                <div class="col-sm-6 mb-4">
+                    <div class="card shadow border-none">
+                        <div class="card-header bg-primary" style="text-align: center;">
+                            <b>Grp. D</b>
+                        </div>
+                        <div class="row m-0 bg-secondary">
+                            <div class="col-sm-4" style="text-align: center;">
+                                team
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                W
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                L
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                D
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                Pts
+                            </div>
+                        </div>
+                        <!-- TEAMS -->
+                        <ul class="list-group list-group-flush">
+                            <!-- TEAM1 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCAC+AR4DASIAAhEBAxEB/8QAGwABAQACAwEAAAAAAAAAAAAAAAEEBQYHCAL/xAAnEAEAAAQGAwEAAgMAAAAAAAAAAQQFEQIhNVF0dXGytOElMRWR0f/EABsBAQACAwEBAAAAAAAAAAAAAAACBwEEBQgD/8QAHhEBAAIBBQEBAAAAAAAAAAAAAAECMgMEM3GxMSL/2gAMAwEAAhEDEQA/AOvkEWQ4KiAKIAoAAgCsmQ1GldhIfRgYrKp+o0rsJD6MD56mMp0yh6U38hv5Fdu2AAAAAAAANbXr/wCGrXBmPRsmtr2jVrgzHojbGWxtuanceuorx3LxEcRc5eK3igMLeJeIgLeJeKALeJeO6KBeK4YxfKwGXEUUXK85IKAgAAoCAAMqn6jSuwkPowMVlU/UaV2Eh9GB89TGU6ZQ9Kb+Q38iu3bAAAAAAAAGsrujVrgzHo2bW17Rq1wZj0ijb5LY23NTuPXUIDiLmAAAAAAAAFwosBmHEBUXK85AqAAACgIAAyqfqNK7CQ+jAxWVT9RpXYSH0YHz1MZTplD0pv5DfyK7dsAAAAAAAAa2u6NWuDMejZNbXtGrXBmPRG2Mtjbc1O49dQio4i5gBkBUAAYA/RWRFgiwYZhxFFRcrzkAMAAAKAgADKp+o0rsJD6MDFZVP1GldhIfRgQ1MZTplD0pv5DfyK7dsAAAAAAAAa2u6NWuDMejZNbXtGrXBmPRG2Mtjbc9O49dQgOIucAAAAAAAAWCLAHESwi5XnJRAFsgAtgQFsWQBWTIajSuwkPowMVlU/UaV2Eh9GB89TGU6ZQ9Kb+Q38iu3bAAAAAAAAGtr2jVrgzHpFsmtrujVrgzHojbGWxtuanceuokBxFzgAKgAAAH6AD6w/2+VgDiIC5XnIABFRbgAXARbgDJp+o0rsJD6MDGuyafqNK7CQ+jA+epjKdMoelN/Ib+RXbtgAAAAAAADW13Rq1wZj0bJra7o1a4Mx6RRt8lsbbmp3HrqEBxFzgAAAAAAH6AsEXCDiSKmS5XnEgRMjIZFTIADIyAIBkMDKkNRpXYSH0YGKypDUaV2Eh9GB89TGU6ZQ9J7+Q38iu3cAAAAAAAAGtrujVrgzHpFsmtrujVrgzHpFG3yWxteenceuoQHEXOAAAAAAH6ACwRcIOIo+kXK85IKAgoCCgIKAjKp+o0rsJD6MDGZMhqNK7CQ+jA+epjKdMoelN/Ib+RXbtgAAAAAAADW13Rq1wZj0bJra9o1a4Mx6RRtjLY23NTuPXUIqOIucAAAAAAAAWCLAHERUuuV5xABkLQLqCBcAtAVBgZMhqNK7CQ+jAxmTIajSuwkPowPnqYynTKHpTfyG/kV27gAAAAAAAA1ld0atcGY9Gza2u6NWuDMekUbfJbG25qdx66hAcRc4AAAAAAfoALBFgDiSXgIuV5yW5cQFvAugC5FwAuXggC3ZUhqNK7CQ+jAxGVT9RpXYSH0YHz1MZSplD0pv5DfyK7dwAAAAAAAAa2vaNWuDMejZNbXtGrXBmPRG2Mtjbc1O49dQgOIucAAAAAAAAWCLAHESwZrlecixYzMwLFjMzAsWMzMCxYzMwLMmQ1GldhIfRgY2bJp+o0rsJD6MD56mMpUyh6U38hv5Fdu4AAAAAAAANbXdGrXBmPRsmsrujVrgzHojb5LY23NTuPXUQDiLnAAAAAAAP0BYIsAcRM1jCOGMYR/uEYw/0LlecUzM1QZMzMAMzNQYTMzAZM2TT9RpXYSH0YGMyqfD+RpPYSH0YENSPzKVMoek9/If8ASyuncAsWACxYALFgAsWAa2vaNWuDMejZNbXYfw1a4Mx6I2xlsbbmp3HrqEWxZxFzoLYsCC2LAgtiwILYsCLAs+sGCOKMYQjD+r5h8f/Z" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>FRA</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                -
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                -
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                -
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>-</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM1 //-->
+                            <!-- TEAM2 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.LKL4fsOhDPLvSF6FiYBNggHaD-?w=341&h=183&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>AST</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>6</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM2 //-->
+                            <!-- TEAM3 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.RV0HzxxIa7jQ8izD1Oi4fAHaEK?w=304&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>TUN</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>4</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM3 //-->
+                            <!-- TEAM4 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.JfojWAocC8HLayoZbgo-mgHaEk?w=290&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>DEN</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>1</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM4 //-->
+                        </ul>
+                    </div>
+                </div>
+                <!--// STANDINGS COL 4 //-->
+
+                <!-- STANDINGS COL 5-->
+                <div class="col-sm-6 mb-4">
+                    <div class="card shadow border-none">
+                        <div class="card-header bg-primary" style="text-align: center;">
+                            <b>Grp. E</b>
+                        </div>
+                        <div class="row m-0 bg-secondary">
+                            <div class="col-sm-4" style="text-align: center;">
+                                team
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                W
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                L
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                D
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                Pts
+                            </div>
+                        </div>
+                        <!-- TEAMS -->
+                        <ul class="list-group list-group-flush">
+                            <!-- TEAM1 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.SKNJ-OYopTVufQC511PTWgHaE8?w=257&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>JAP</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>6</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM1 //-->
+                            <!-- TEAM2 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.VK3NzxO2Mf6QLHqJ0E_zjQHaE7?w=256&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>ESP</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>4</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM2 //-->
+                            <!-- TEAM3 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.4wHYMgW5SB7Vn3LyJDsnQQAAAA?w=267&h=177&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>GER</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>4</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM3 //-->
+                            <!-- TEAM4 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.CjXtpi9h2O1xgxti8t1JYQHaEb?w=290&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>CST</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>3</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM4 //-->
+                        </ul>
+                    </div>
+                </div>
+                <!--// STANDINGS COL 5 //-->
+
+                <!-- STANDINGS COL 6-->
+                <div class="col-sm-6 mb-4">
+                    <div class="card shadow border-none">
+                        <div class="card-header bg-primary" style="text-align: center;">
+                            <b>Grp. F</b>
+                        </div>
+                        <div class="row m-0 bg-secondary">
+                            <div class="col-sm-4" style="text-align: center;">
+                                team
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                W
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                L
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                D
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                Pts
+                            </div>
+                        </div>
+                        <!-- TEAMS -->
+                        <ul class="list-group list-group-flush">
+                            <!-- TEAM1 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.941kDaYNxI97Eu_0e1XmVwHaE8?w=262&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>MOR</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>7</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM1 //-->
+                            <!-- TEAM2 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.tGKmhEVp02QsZbfrXIl1RwAAAA?w=266&h=141&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>CRT</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>5</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM2 //-->
+                            <!-- TEAM3 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.GUdavY8M3whriKFJkESXngHaGa?w=219&h=190&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>BLG</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>4</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM3 //-->
+                            <!-- TEAM4 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.lKwAgeH5SBl7a5K-9xbiUgHaEV?w=298&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>CAN</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                3
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>0</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM4 //-->
+                        </ul>
+                    </div>
+                </div>
+                <!--// STANDINGS COL 6 //-->
+
+                <!-- STANDINGS COL 7-->
+                <div class="col-sm-6 mb-4">
+                    <div class="card shadow border-none">
+                        <div class="card-header bg-primary" style="text-align: center;">
+                            <b>Grp. G</b>
+                        </div>
+                        <div class="row m-0 bg-secondary">
+                            <div class="col-sm-4" style="text-align: center;">
+                                team
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                W
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                L
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                D
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                Pts
+                            </div>
+                        </div>
+                        <!-- TEAMS -->
+                        <ul class="list-group list-group-flush">
+                            <!-- TEAM1 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.pFEIAieTT7GlVOUfAhJMowHaFP?w=250&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>BRZ</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>6</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM1 //-->
+                            <!-- TEAM2 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.FlqkY9vjawEuKYvACnK1VgHaE7?w=269&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>SEZ</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>6</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM2 //-->
+                            <!-- TEAM3 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.NbdaA1xZrqI9N-zv2X5EHgHaE8?w=250&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>CMR</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>4</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM3 //-->
+                            <!-- TEAM4 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.7qt06M5AL5cNgOHUVIwrcgHaE8?w=248&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>SER</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>1</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM4 //-->
+                        </ul>
+                    </div>
+                </div>
+                <!--// STANDINGS COL 7 //-->
+
+                <!-- STANDINGS COL 8-->
+                <div class="col-sm-6 mb-4">
+                    <div class="card shadow border-none">
+                        <div class="card-header bg-primary" style="text-align: center;">
+                            <b>Grp. H</b>
+                        </div>
+                        <div class="row m-0 bg-secondary">
+                            <div class="col-sm-4" style="text-align: center;">
+                                team
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                W
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                L
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                D
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                Pts
+                            </div>
+                        </div>
+                        <!-- TEAMS -->
+                        <ul class="list-group list-group-flush">
+                            <!-- TEAM1 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.m44f6tjR6zg4K3hwcYu5owHaE8?w=276&h=184&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>POR</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>6</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM1 //-->
+                            <!-- TEAM2 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.qAF5D4Ntq4jWN-fdXty0kwHaD4?w=340&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>SOK</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>4</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM2 //-->
+                            <!-- TEAM3 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.lsxQR19xJuOG8Fn8MMB94wHaE8?w=254&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>URG</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>4</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM3 //-->
+                            <!-- TEAM4 -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://th.bing.com/th/id/OIP.gn0xjap7AEObVkm0CQbWFAHaE8?w=247&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>GAN</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>3</b>
+                            </div>
+                                </div>
+                            </li>
+                            <!--// TEAM4 //-->
+                        </ul>
+                    </div>
+                </div>
+                <!--// STANDINGS COL 8 //-->
+            </div>
+            <!--// STANDINGS ROW //-->
+        </div>
+        <!--// STANDINGS //-->
+
+        <!-- MATCHES -->
+        <div>
+            <!-- TITLE ROW -->
+                <div class="row" style="direction: rtl;"> 
+                    <h1><b>المباريات</b></h1>
+                    <hr>
+                </div>
+            <!--// TITLE ROW //-->
+
+            <!-- MATCHES ROW -->
+            <div class="row" id="matches">
+
+                <!-- MATCH COL -->
+                <div class="col-sm-12">
+                    <div class="card shadow rounded-pill" style="overflow: hidden";>
+                        <div class="card-body p-0">
+                            <div class="row" style="height: 120px;">
+                                <!-- FIRST TEAM COL -->
+                                <div 
+                                    class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-items-center"
+                                    style="border-right: solid 5px #5b0d25;"
+                                    >
+                                    <div class="d-flex align-items-center justify-content-center">
+                                    <!-- IMAGE AND TEAM DIV -->
+                                    <div>
+                                        <div class="flag">
+                                            <img 
+                                                style="width: 40px; height: 40px"
+                                                class="rounded-circle" 
+                                                src="https://th.bing.com/th/id/OIP.cgHHbK10pc9EKXmEBVYdmwHaE7?w=259&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                            >
+                                        </div>
+                                        <h5 style="margin:auto 4px">
+                                            <b>NED</b>
+                                        </h5>
+                                    </div>
+                                    <!--// IMAGE AND TEAM DIV //-->
+                                    </div>
+                                
+                                </div>
+                                <!--// FIRST TEAM COL //-->
+
+                                <!-- match info col -->
+                                <div class="col-sm-6" style="text-align: center;">
+                                    <h6>Group (A)</h6>
+                                    <h1>X</h1>
+                                    <h6>18:00</h6>
+                                </div>
+                                <!--// match info col //-->
+                                <!-- second TEAM COL -->
+                                <div 
+                                    class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-items-center"
+                                    style="border-left: solid 5px #5b0d25;"
+                                    >
+                                    <div class="d-flex align-items-center justify-content-center">
+                                    <!-- IMAGE AND TEAM DIV -->
+                                    <div>
+                                        <div class="flag">
+                                            <img 
+                                                style="width: 40px; height: 40px"
+                                                class="rounded-circle" 
+                                                src="https://th.bing.com/th/id/OIP.cgHHbK10pc9EKXmEBVYdmwHaE7?w=259&h=180&c=7&r=0&o=5&pid=1.7" alt=""
+                                            >
+                                        </div>
+                                        <h5 style="margin:auto 4px">
+                                            <b>NED</b>
+                                        </h5>
+                                    </div>
+                                    <!--// IMAGE AND TEAM DIV //-->
+                                    </div>
+                                
+                                </div>
+                                <!--// second TEAM COL //-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--// MATCH COL //-->
+                </div>
+            <!--// MATCHES ROW //-->
+            </div>
+        <!--// MATCHES //-->
+        </div>
+    <!--// MAIN CONTENT //-->
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+<script>
+    const token = "91cbe1ab0ee64899ac1a79db3c364e29"
+    const baseUrl = "https://api.football-data.org/v4/competiions/2000"
+
+    function getStandings()
+    {
+        const url = `${baseUrl}/standings`
+
+        axios.get(url, {
+            headers: {
+                "X-Auth-Token": token
+            }
+        })
+        .then((response) =>{
+            
+            const standings = response.data.standings
+            
+            document.getElementById("standings").innerHTML = ""
+            for(standing of standings)
+            {
+                let tableContent = ""
+
+                for(row of standing.table){
+
+                    tableContent+= `
+                        TEAM3
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://cdn.britannica.com/79/5779-004-491EE13C.jpg" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>KSA</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>3</b>
+                            </div>
+                                </div>
+                            </li>
+                            // TEAM3 //
+                    `
+                }
+            
+                const content = `
+                STANDINGS COL 8
+                <div class="col-sm-6 mb-4">
+                    <div class="card shadow border-none">
+                        <div class="card-header bg-primary" style="text-align: center;">
+                            <b>${standing.group}</b>
+                        </div>
+                        <div class="row m-0 bg-secondary">
+                            <div class="col-sm-4" style="text-align: center;">
+                                team
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                W
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                L
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                D
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                Pts
+                            </div>
+                        </div>
+                        TEAMS
+                        <ul class="list-group list-group-flush">
+                            TEAM1
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://cdn.britannica.com/79/5779-004-491EE13C.jpg" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>KSA</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>3</b>
+                            </div>
+                                </div>
+                            </li>
+                            // TEAM1 //
+                            TEAM2
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://cdn.britannica.com/79/5779-004-491EE13C.jpg" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>KSA</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>3</b>
+                            </div>
+                                </div>
+                            </li>
+                            // TEAM2 //
+                            TEAM3
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://cdn.britannica.com/79/5779-004-491EE13C.jpg" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>KSA</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>3</b>
+                            </div>
+                                </div>
+                            </li>
+                            // TEAM3 //
+                            TEAM4
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span class="flag">
+                                    <img 
+                                        style="width: 40px; height: 40px"
+                                        class="rounded-circle" 
+                                        src="https://cdn.britannica.com/79/5779-004-491EE13C.jpg" alt=""
+                                    >
+                                </span>
+                                <h5 style="margin:auto 4px">
+                                    <b>KSA</b>
+                                </h5>
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                2
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                1
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                0
+                            </div>
+                            <div class="col-sm-2" style="text-align: center;">
+                                <b>3</b>
+                            </div>
+                                </div>
+                            </li>
+                            // TEAM4 //
+                        </ul>
+                    </div>
+                </div>
+                // STANDINGS COL 8 //
+                `
+            
+                document.getElementById("standings").innerHTML += content   
+            }
+
+        })
+    }
+
+    getStandings()
+</script>
+</html>
